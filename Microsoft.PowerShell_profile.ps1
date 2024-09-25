@@ -1,4 +1,4 @@
-(@(& '/home/messium/.local/bin/oh-my-posh' init pwsh --config='' --print) -join "`n") | Invoke-Expression
+(@(& '/usr/bin/oh-my-posh' init pwsh --config='' --print) -join "`n") | Invoke-Expression
 Invoke-Expression (& { (zoxide init powershell | Out-String) })
 Import-Module posh-git
 Import-Module -Name Terminal-Icons
